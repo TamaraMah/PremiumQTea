@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from 'next/image';
 
 export default function NavBar() {
   return (
@@ -10,10 +9,7 @@ export default function NavBar() {
           <div className="flex justify-between items-center py-3">
             <Link href="/">
               <div className="flex items-center text-gray-700 hover:text-gray-900 cursor-pointer">
-              <div className="flex items-center text-gray-700 hover:text-gray-900 cursor-pointer">
-  <Image src="/tealogo.jpg" alt="Premium QTea Logo" className="h-16" width={64} height={64} />
-  <span className="font-bold text-2xl">Premium QTea</span>
-</div>
+                <img src="/tealogo.jpg" alt="Premium QTea Logo" className="h-16" />
                 <span className="font-bold text-2xl">Premium QTea</span>
               </div>
             </Link>
