@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const ProductDetailsModal = ({ product, onClose }) => {
   if (!product) return null;

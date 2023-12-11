@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function AboutUsPage() {
   return (
@@ -24,11 +25,11 @@ export default function AboutUsPage() {
           <h1 className="text-3xl font-bold text-center mb-4">About Us</h1>
           
           <p className="text-lg">
-            Welcome to Premium QTea! We are passionate about providing the highest 
-            quality teas from around the world to our customers. Our mission is to 
-            enrich people's lives with the comforting and invigorating experience 
-            of enjoying an excellent cup of tea.
-          </p>
+ Welcome to Premium QTea! We&apos;re passionate about providing the highest 
+  quality teas from around the world to our customers. Our mission is to 
+  enrich people&apos;s lives with the comforting and invigorating experience 
+  of enjoying an excellent cup of tea.
+</p>
 
           <h2 className="text-2xl font-semibold mt-8">Our Story</h2>
           <p className="text-lg">
