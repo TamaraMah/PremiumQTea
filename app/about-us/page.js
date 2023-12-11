@@ -21,24 +21,24 @@ export default function AboutUsPage() {
       </nav>
       
       <main className="flex-grow p-4 text-pink-600 font-serif mix-blend-luminosity">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-3xl font-bold text-center mb-4">About Us</h1>
-          
-          <p className="text-lg">
- Welcome to Premium QTea! We&apos;re passionate about providing the highest 
-  quality teas from around the world to our customers. Our mission is to 
-  enrich people&apos;s lives with the comforting and invigorating experience 
-  of enjoying an excellent cup of tea.
-</p>
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-3xl font-bold text-center mb-4">About Us</h1>
+        
+        <p className="text-lg">
+          Welcome to Premium QTea! We&apos;re passionate about providing the highest 
+          quality teas from around the world to our customers. Our mission is to 
+          enrich people&apos;s lives with the comforting and invigorating experience 
+          of enjoying an excellent cup of tea.
+        </p>
 
-          <h2 className="text-2xl font-semibold mt-8">Our Story</h2>
-          <p className="text-lg">
-            Premium QTea started as a small family-owned tea shop in the heart of the city. 
-            Over the years, our love for tea and dedication to quality have driven us to 
-            source the finest tea leaves from tea gardens worldwide. We carefully select 
-            and blend each tea to perfection, ensuring that every sip is a delightful 
-            experience.
-          </p>
+        <h2 className="text-2xl font-semibold mt-8">Our Story</h2>
+        <p className="text-lg">
+          Premium QTea started as a small family-owned tea shop in the heart of the city. 
+          Over the years, our love for tea and dedication to quality have driven us to 
+          source the finest tea leaves from tea gardens worldwide. We carefully select 
+          and blend each tea to perfection, ensuring that every sip is a delightful 
+          experience.
+        </p>
 
           <h2 className="text-2xl font-semibold mt-8">Our Commitment</h2>
           <p className="text-lg">

@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/image'; 
 
 const ProductDetailsModal = ({ product, onClose }) => {
   if (!product) return null;
@@ -64,17 +64,17 @@ export default function ShopAllPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-normal mb-10 text-pink-800 font-serif">Explore Our Selection of Luxury Tea</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {products.map(product => (
-              <div key={product.id} className="bg-white border-2 border-gray-200 hover:border-gray-400 p-6 hover:shadow-xl transition duration-500 ease-in-out rounded-xl transform hover:scale-105 cursor-pointer" onClick={() => openModal(product)}>
-                <img src={product.imageUrl} alt={product.name} className="w-full h-auto mb-6 rounded-md"/>
-                <h2 className="text-3xl font-semibold mb-2 text-pink-800 font-serif">{product.name}</h2>
-                <p className="mb-4 text-pink-800 font-serif">{product.description}</p>
-                <div className="text-pink-600 font-medium">View Details</div>
-              </div>
-            ))}
-          </div>
+          {products.map(product => (
+            <div key={product.id} className="bg-white border-2 border-gray-200 hover:border-gray-400 p-6 hover:shadow-xl transition duration-500 ease-in-out rounded-xl transform hover:scale-105 cursor-pointer" onClick={() => openModal(product)}>
+              <Image src={product.imageUrl} alt={product.name} className="w-full h-auto mb-6 rounded-md" width={500} height={300} /> {/* Adjust width and height as needed */}
+              <h2 className="text-3xl font-semibold mb-2 text-pink-800 font-serif">{product.name}</h2>
+              <p className="mb-4 text-pink-800 font-serif">{product.description}</p>
+              <div className="text-pink-600 font-medium">View Details</div>
+            </div>
+          ))}
         </div>
-      </main>
+      </div>
+    </main>
 
       {showModal && <ProductDetailsModal product={selectedProduct} onClose={closeModal} />}
       
