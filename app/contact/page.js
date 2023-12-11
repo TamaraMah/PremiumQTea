@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function ContactPage() {
   return (
-    <div className="bg-white flex flex-col min-h-screen">
+    <div className="bg-white flex flex-col min-h-screen font-serif">
       <nav className="bg-gray-100 shadow-md">
         <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
           <Link href="/">
@@ -34,7 +34,7 @@ export default function ContactPage() {
         </div>
       </main>
       
-      <footer className="bg-gray-300 text-black p-4 text-center">
+      <footer className="bg-gray-200 text-black p-4 text-center">
         <p>Premium QTea © 2023</p>
       </footer>
     </div>

@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className="flex flex-col min-h-screen" style={{ backgroundImage: 'url(/turkishcats.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <nav className="bg-gray-200 shadow-md">
+    <div className="flex flex-col min-h-screen font-serif" style={{ backgroundImage: 'url(/teabg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <nav className="bg-gray-100 shadow-md mix-blend-luminosity">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center py-3">
             <Link href="/">
               <div className="flex items-center text-gray-700 hover:text-gray-900 cursor-pointer">
-                <img src="/logo.jpg" alt="Premium QTea Logo" className="h-10 mr-3" />
+              <img src="/tealogo.jpg" alt="Premium QTea Logo" className="h-16 " />
                 <span className="font-bold text-2xl">Premium QTea</span>
               </div>
             </Link>
@@ -28,7 +28,7 @@ export default function NavBar() {
         </div>
       </nav>
 
-      <footer className="bg-gray-300 text-black p-4 text-center mt-auto">
+      <footer className="p-4 text-center mt-auto mix-blend-soft-light bg-gray-800">
         <p>Premium QTea © 2023</p>
       </footer>
     </div>
