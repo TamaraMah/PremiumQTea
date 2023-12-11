@@ -1,25 +1,30 @@
-// Contact Page
-
 import React from "react";
 import Link from "next/link";
 
 export default function ContactPage() {
   return (
-    <div className="bg-white flex flex-col min-h-screen font-serif">
-      <nav className="bg-gray-100 shadow-md">
+    <div
+      className="bg-white flex flex-col min-h-screen"
+      style={{
+        backgroundImage: 'url(/contactbg.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <nav className="bg-gray-100 shadow-md mix-blend-luminosity">
         <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
           <Link href="/">
             <div className="text-gray-700 hover:text-gray-900 cursor-pointer">← Back to Home</div>
           </Link>
         </div>
       </nav>
-      
-      <main className="flex-grow p-4 text-rose-300">
+
+      <main className="flex-grow p-4 text-gray-700 mix-blend-luminosity">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
           <div>
             <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
             <p className="mb-4">
-              If you have any questions or concerns, please email hello@premiumqtea.com or fill out the form and we will get back to you as soon as possible (usually within 1-2 business days)!
+            If you have any questions or concerns, please email hello@premiumqtea.com or fill out the form below, and we will get back to you as soon as possible (usually within 1-2 business days)!
             </p>
           </div>
           <div>
@@ -34,7 +39,7 @@ export default function ContactPage() {
         </div>
       </main>
       
-      <footer className="bg-gray-200 text-black p-4 text-center">
+      <footer className="p-4 text-center mt-auto mix-blend-soft-light bg-gray-800">
         <p>Premium QTea © 2023</p>
       </footer>
     </div>
