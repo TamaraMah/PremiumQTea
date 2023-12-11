@@ -3,8 +3,15 @@ import Link from "next/link";
 
 export default function AboutUsPage() {
   return (
-    <div className="bg-white flex flex-col min-h-screen">
-      <nav className="bg-gray-100 shadow-md">
+    <div
+      className="bg-white flex flex-col min-h-screen"
+      style={{
+        backgroundImage: 'url(/teapot.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <nav className="bg-gray-100 shadow-md mix-blend-luminosity">
         <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
           <Link href="/">
             <div className="text-gray-700 hover:text-gray-900 cursor-pointer">← Back to Home</div>
@@ -12,9 +19,10 @@ export default function AboutUsPage() {
         </div>
       </nav>
       
-      <main className="flex-grow p-4 text-pink-600 font-serif"> {/* Use a custom font class (e.g., font-serif) */}
+      <main className="flex-grow p-4 text-pink-600 font-serif mix-blend-luminosity">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl font-bold text-center mb-4">About Us</h1>
+          
           <p className="text-lg">
             Welcome to Premium QTea! We are passionate about providing the highest 
             quality teas from around the world to our customers. Our mission is to 
@@ -48,7 +56,7 @@ export default function AboutUsPage() {
         </div>
       </main>
       
-      <footer className="bg-gray-200 text-black p-4 text-center">
+      <footer className="p-4 text-center mt-auto mix-blend-soft-light bg-gray-800">
         <p>Premium QTea © 2023</p>
       </footer>
     </div>
