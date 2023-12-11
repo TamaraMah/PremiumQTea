@@ -11,7 +11,7 @@ export default function ContactPage() {
         backgroundPosition: 'center',
       }}
     >
-      <nav className="bg-gray-100 shadow-md mix-blend-luminosity">
+      <nav className="bg-gray-100 shadow-md mix-blend-luminosity font-serif">
         <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
           <Link href="/">
             <div className="text-gray-700 hover:text-gray-900 cursor-pointer">← Back to Home</div>
@@ -19,7 +19,7 @@ export default function ContactPage() {
         </div>
       </nav>
 
-      <main className="flex-grow p-4 text-gray-700 mix-blend-luminosity">
+      <main className="flex-grow p-4 text-gray-700 mix-blend-luminosity font-serif">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
           <div>
             <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
@@ -39,7 +39,7 @@ export default function ContactPage() {
         </div>
       </main>
       
-      <footer className="p-4 text-center mt-auto mix-blend-soft-light bg-gray-800">
+      <footer className="p-4 text-center mt-auto mix-blend-soft-light bg-gray-800 font-serif">
         <p>Premium QTea © 2023</p>
       </footer>
     </div>

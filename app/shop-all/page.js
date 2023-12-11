@@ -6,7 +6,8 @@ const ProductDetailsModal = ({ product, onClose }) => {
   if (!product) return null;
 
   return (
-    <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center z-50">
+    <div className="fixed inset-0 flex justify-center items-center z-50">
+      <div className="bg-gray-500 bg-opacity-75 absolute inset-0"></div>
       <div className="bg-white p-4 rounded-lg shadow-lg flex max-w-2xl relative">
         <button onClick={onClose} className="absolute top-0 right-0 mt-2 mr-2 text-gray-600 hover:text-gray-800">
           <svg className="h-6 w-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -49,7 +50,7 @@ export default function ShopAllPage() {
   ];
 
   return (
-    <div className="bg-white flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen font-serif" style={{ backgroundImage: 'url(/bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <nav className="bg-gray-100 shadow-md">
         <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
           <Link href="/">
